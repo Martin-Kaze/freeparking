@@ -1,0 +1,32 @@
+nav {
+display: flex;
+flex-direction: column;
+row-gap: 10px
+}
+
+.nav-btn {
+  display: inline-block;
+  outline: solid white 1px;
+  padding: 10px 16px;
+  background: #21202044;
+  color: rgb(255, 255, 255);
+  text-decoration: none;   /* removes underline */
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background: #000000d5;
+  outline: none;
+}
+
+.nav-btn:visited {
+  color: rgb(255, 255, 255);  /* prevent purple visited color */
+}
+
+.nav-btn.closed {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+}
