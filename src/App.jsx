@@ -3,7 +3,7 @@ import React, { useRef, useEffect, useState } from "react";
 import Nav from "./components/navbar/Nav.jsx"
 import Mapp from "./components/map/Map.jsx"
 import Checkbox from "./components/checkbox/Checkbox";
-import Range from "./components/Range.jsx";
+import Range from "./components/range/Range.jsx";
 
 
 
