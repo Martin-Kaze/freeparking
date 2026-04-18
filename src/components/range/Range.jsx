@@ -1,19 +1,15 @@
-
+import './Range.css'
 
 function Range(props) {
   return (
-    <div>
-  <input
-    type="range"
-    id={props.id}
-    name={props.name}
-    min="0"
-    max="100"
-    value={props.value}
-    step="10" 
-    onChange={(e) => props.clicked(Number(e.target.value))}/>
-  <label htmlFor={props.id}>{props.name}</label>
-</div>
+    <div className="range-wrapper">
+      <p className="range-label">{props.name}</p>
+      <div className="range-row">
+        <input type="range" min="0" max="100" value={props.value} step="1"
+          onChange={(e) => props.clicked(Number(e.target.value))} />
+        <span className="range-val">{props.value}%</span>
+      </div>
+    </div>
   )
 }
 

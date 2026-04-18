@@ -1,0 +1,28 @@
+.zone-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.15s;
+  margin-bottom: 6px;
+}
+
+.zone-pill:hover {
+  background: rgba(255,255,255,0.04);
+}
+
+.zone-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.zone-name {
+  font-size: 13px;
+  color: #ccc;
+  flex: 1;
+}

@@ -1,32 +1,17 @@
-nav {
-display: flex;
-flex-direction: column;
-row-gap: 10px
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 48px;
+  background: #111;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  flex-shrink: 0;
 }
 
-.nav-btn {
-  display: inline-block;
-  outline: solid white 1px;
-  padding: 10px 16px;
-  background: #21202044;
-  color: rgb(255, 255, 255);
-  text-decoration: none;   /* removes underline */
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-}
-
-.nav-btn:hover {
-  background: #000000d5;
-  outline: none;
-}
-
-.nav-btn:visited {
-  color: rgb(255, 255, 255);  /* prevent purple visited color */
-}
-
-.nav-btn.closed {
-  max-height: 0;
-  opacity: 0;
-  transform: translateY(-20px);
+.nav-logo {
+  font-family: monospace;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f0f0f0;
 }

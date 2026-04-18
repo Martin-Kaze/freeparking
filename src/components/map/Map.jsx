@@ -1,4 +1,4 @@
-import "./Map.css";
+
 import { useRef, useEffect } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
@@ -114,13 +114,13 @@ function Mapp(props) {
     
   }, [props.red, props.green, props.gray, props.opacity]);
 
-  return (
+return (
     <div
       ref={mapContainer}
       style={{
-        width: "500px", height: "500px", minHeight: "500px",
-        border: "1px solid rgba(0,0,0,0.06)",
-        borderRadius: "15px", background: "#eee"
+        flex: 1,
+        height: "100%",
+        minHeight: 0,
       }}
     />
   );
