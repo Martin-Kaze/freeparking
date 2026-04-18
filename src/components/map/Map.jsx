@@ -19,7 +19,7 @@ function Mapp(props) {
     const map = new maplibregl.Map({
       container: mapContainer.current,
       center: [25.281773, 54.686633],
-      zoom: 12,
+      zoom: 14,
       hash: false,
       pitch: 100,
       bearing: -10,
