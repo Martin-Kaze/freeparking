@@ -43,8 +43,8 @@ function Mapp(props) {
     map.on("load", () => {
       console.log("Map loaded successfully");
 
-      map.addSource('pol', { type: 'geojson', data: '/bett.json' });
-      map.addSource('zones', { type: 'geojson', data: '/zonos.geojson' });
+   map.addSource('pol', { type: 'geojson', data: '/freeparking/bett.json' });
+map.addSource('zones', { type: 'geojson', data: '/freeparking/zonos.geojson' });
 
       map.addLayer({
         id: 'polygons', type: 'fill', source: 'pol',
